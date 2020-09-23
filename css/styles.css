@@ -1,0 +1,434 @@
+html {
+    box-sizing: border-box;
+      font-size: 62.5%; /*1rem = 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      font-family: sans-serif;;
+      font-size: 1.6rem;
+      line-height: 2;
+  }
+  /*GLOBALES*/
+  .contenedor{
+      max-width: 1200px;
+      width: 95%;
+      margin: 0 auto;
+  }
+  h1,h2,h3,h4{font-family: sans-serif; }
+  
+  h1{
+      font-size: 4.8rem;
+  }
+  h2{
+      font-size: 4rem;
+      line-height: 1.3;
+  }
+  h3{
+      font-size: 3.2rem;
+  }
+  h4{
+      font-size: 2.8rem;
+  }
+  img{
+      max-width: 100%;
+  }
+  /*UTILIDADES*/
+  .centrar-texto{
+      text-align: center;
+  }
+  .no-margin{
+      margin: 0;
+  }
+
+/* Header */
+.navbar a{
+    text-decoration: none;
+}
+.navbar h1{
+    color: #262626;
+    font-weight: 400;
+    text-align: center;
+}
+.navbar span{
+    color: #2e21df;
+    font-weight: 700;
+}
+
+@media (min-width: 500px){
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+     .navbar{
+    background-color: #fff;
+    }
+    .navegacion{
+    margin-right: 28px;
+    }
+}
+
+/*NAVEGACIÓN*/
+.navegacion a{
+    color: #262626;
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 500px){
+    .navegacion a{
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+        margin: 0;
+    }
+    .navegacion a:hover{
+    color: #2e21df;
+    }
+}
+
+.header{
+    background-image: url(../img/index_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 60vh;
+}
+.texto-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-header h2{
+    color: #2e21df;
+    margin-top: 12rem;
+}
+.texto-header p{
+    color: #7b7b7b;
+    font-size: 2rem;
+}
+
+/* About */
+.contenedor-expertos{
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+    width: 90%;
+}
+
+.expertos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.subtitulo{
+	color: #2e21df;
+	font-weight: 300;
+	text-align: center;
+	font-size: 40px;
+}
+.cont-expertos {
+    text-align: center;
+    width: 30%;
+}
+.cont-expertos img{
+	width: 80%;
+}
+.cont-expertos h3{
+    font-size: 2rem;
+}
+@media (max-width: 750px){
+	
+}
+
+/* Courses */
+.contenedor-caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin: 31px 0;
+}
+.caja{
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 350px;
+}
+.icono{
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    height: 80px;
+    margin: 0 auto;
+    transition: 1s;
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja:nth-child(1) .icono{
+    background-color: #e91e63;
+    box-shadow: 0 0 0 0 #e91e63;
+}
+.caja:nth-child(1):hover .icono{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+.caja:nth-child(2) .icono{
+    background-color: #23e629;
+    box-shadow: 0 0 0 0 #23e629;
+}
+.caja:nth-child(2):hover .icono{
+    box-shadow: 0 0 0 400px #23e629;
+}
+.caja:nth-child(3) .icono{
+    background-color: #2196f3;
+    box-shadow: 0 0 0 0 #2196f3;
+}
+.caja:nth-child(3):hover .icono{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.contenido{
+    position: relative;
+    z-index: 1;
+}
+.caja:hover .contenido{
+    color: #fff;
+}
+.contenido h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.contenido p{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.caja::before{
+    content: '';
+    background-color: rgba(255, 255, 255, .2);
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    pointer-events: none;
+    width: 50%;
+    z-index: 2;
+}
+@media (max-width: 1080px){
+    .caja{
+        width: 300px;
+    }
+}
+@media (max-width: 960px){
+    .caja{
+        width: 250px;
+    }
+}
+@media (max-width: 900px){
+    .caja{
+        margin-top: 20px;
+        width: 90%;
+    }
+}
+
+/* ----- ----- MAIN ----- ----- */
+.header-cursos{
+    background-image: url(../img/courses.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 60vh;
+    margin-bottom: 15px;
+}
+.main .acerca-de article {
+    background: #fff;
+    color: #000;
+	padding: 20px;
+	width: 35%;
+	position: relative;
+    top: 130px;
+    left: 60px;
+	z-index: 1;
+	float: left;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .acerca-de article h3 {
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.main .acerca-de article p{
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 1200px){
+    .main .acerca-de article{
+        top: 90px;
+        left: 40px;
+    }
+}
+
+@media (max-width: 900px){
+    .main .acerca-de article{
+        top: 85px;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+	header .contenedor{
+		position: static;
+		height: auto;
+	}
+	header .textos h3{
+		font-size: 18px;
+	}
+
+	.main .acerca-de .foto{
+		position: relative;
+		width: 100%;
+    }
+}
+
+@media (max-width: 715px){
+    .main .acerca-de article{
+        padding: 18px;
+        top: 75px;
+        left: 40px;
+    }
+    .main .acerca-de article h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .main .acerca-de article p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 685px){
+    .main .acerca-de article{
+        padding: 16px;
+        top: 70px;
+        left: 40px;
+    }
+    .main .acerca-de article h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    
+    .main .acerca-de article p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+/* About */
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+  }
+  
+  .tabset .tab-panel {
+    display: none;
+  }
+  
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+  }
+  
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+  }
+  
+  .tabset > label:hover,
+  .tabset > input:focus + label {
+    color: #06c;
+  }
+  
+  .tabset > label:hover::after,
+  .tabset > input:focus + label::after,
+  .tabset > input:checked + label::after {
+    background: #06c;
+  }
+  
+  .tabset > input:checked + label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+  }
+  
+  .tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+  }
+
+/* Footer */
+footer{
+	background: #7b7b7b;
+}
+
+footer .copyright{
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+}
