@@ -344,6 +344,10 @@ html {
 }
 
 @media (max-width: 685px){
+	.texto-header p{
+	 text-align: center;
+	padding-top: .5rem;
+	}
     .main .acerca-de article{
         padding: 16px;
         top: 70px;
