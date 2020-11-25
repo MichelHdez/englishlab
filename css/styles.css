@@ -372,9 +372,13 @@ html {
 }
 
 @media (max-width: 528px){
+    .texto-header h2{
+       margin: 9.5rem 0 0 0;
+    }
     .texto-header p{
        text-align: center;
        padding-top: .5rem;
+       font-size: 18px;
     }
     .main .acerca-de article{
         padding: 16px;
@@ -395,7 +399,6 @@ html {
 @media (max-width: 500px){
     .texto-header p{
        text-align: center;
-       /*padding-top: .5rem;*/
     }
     .main .acerca-de article{
         padding: 16px;
@@ -409,7 +412,6 @@ html {
     
     .main .acerca-de article p{
         font-size: 14px;
-        /*line-height: 20px;*/
         margin-bottom: 8px;
     }
 }
