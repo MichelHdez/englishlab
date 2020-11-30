@@ -286,7 +286,7 @@ html {
 }
 
 .main .acerca-de article h3 {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 10px;
 }
@@ -298,7 +298,7 @@ html {
 
 @media (max-width: 1200px){
     .main .acerca-de article{
-        top: 90px;
+        top: 80px;
         left: 40px;
     }
 }
@@ -326,19 +326,20 @@ html {
 		position: relative;
 		width: 100%;
     }
-    .contenedor-expertos h2{
-      margin-top: 0;
-    }
 }
 
 @media (max-width: 715px){
+    .texto-header h2{
+         margin: 11rem 0 0 0;
+         font-size: 3.8rem;
+      }
     .main .acerca-de article{
         padding: 18px;
         top: 75px;
         left: 40px;
     }
     .main .acerca-de article h3 {
-        font-size: 20px;
+        font-size: 17.5px;
         margin-bottom: 8px;
     }
     
@@ -350,9 +351,14 @@ html {
 }
 
 @media (max-width: 685px){
+    .texto-header h2{
+         margin: 9rem 0 0 0;
+         font-size: 3.6rem;
+      }
   	.texto-header p{
   	   text-align: center;
   	   padding-top: 1rem;
+       font-size: 1.8rem;
   	}
     .main .acerca-de article{
         padding: 16px;
@@ -365,20 +371,24 @@ html {
     }
     
     .main .acerca-de article p{
-        font-size: 16px;
+        font-size: 15px;
         line-height: 24px;
         margin-bottom: 10px;
     }
 }
 
 @media (max-width: 528px){
+  .navegacion a:last-of-type{
+      padding-bottom: 0;
+  }
     .texto-header h2{
-       margin: 9.5rem 0 0 0;
+       margin: 7rem 0 0 0;
+        font-size: 3.4rem;
     }
     .texto-header p{
        text-align: center;
        padding-top: .5rem;
-       font-size: 18px;
+       font-size: 1.6rem;
     }
     .main .acerca-de article{
         padding: 16px;
@@ -386,19 +396,23 @@ html {
         left: 40px;
     }
     .main .acerca-de article h3 {
-        font-size: 18px;
+        font-size: 17.5px;
         margin-bottom: 5px;
     }
     
     .main .acerca-de article p{
-        font-size: 15px;
+        font-size: 14.5px;
         line-height: 20px;
         margin-bottom: 8px;
     }
 }
 @media (max-width: 500px){
+  .texto-header h2{
+      font-size: 3.3rem;
+    }
     .texto-header p{
        text-align: center;
+       font-size: 1.5rem;
     }
     .main .acerca-de article{
         padding: 16px;
@@ -413,6 +427,16 @@ html {
     .main .acerca-de article p{
         font-size: 14px;
         margin-bottom: 8px;
+    }
+}
+@media (max-width: 330px){
+  .texto-header h2{
+      font-size: 3rem;
+      margin: 5rem 0 0 0;
+    }
+    .texto-header p{
+       text-align: center;
+       font-size: 1.3rem;
     }
 }
 
