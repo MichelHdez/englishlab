@@ -330,7 +330,7 @@ html {
 
 @media (max-width: 715px){
     .texto-header h2{
-         margin: 11rem 0 0 0;
+         margin: 11.5rem 0 0 0;
          font-size: 3.8rem;
       }
     .main .acerca-de article{
@@ -348,11 +348,14 @@ html {
         line-height: 26px;
         margin-bottom: 10px;
     }
+    .subtitulo{
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 685px){
     .texto-header h2{
-         margin: 9rem 0 0 0;
+         margin: 9.5rem 0 0 0;
          font-size: 3.6rem;
       }
   	.texto-header p{
@@ -375,6 +378,9 @@ html {
         line-height: 24px;
         margin-bottom: 10px;
     }
+    .subtitulo{
+      font-size: 32px;
+  }
 }
 
 @media (max-width: 528px){
@@ -382,7 +388,7 @@ html {
       padding-bottom: 0;
   }
     .texto-header h2{
-       margin: 7rem 0 0 0;
+       margin: 8rem 0 0 0;
         font-size: 3.4rem;
     }
     .texto-header p{
@@ -405,10 +411,14 @@ html {
         line-height: 20px;
         margin-bottom: 8px;
     }
+     .subtitulo{
+      font-size: 30px;
+  }
 }
 @media (max-width: 500px){
   .texto-header h2{
       font-size: 3.3rem;
+      margin: 7.5rem 0 0 0;
     }
     .texto-header p{
        text-align: center;
@@ -431,12 +441,12 @@ html {
 }
 @media (max-width: 330px){
   .texto-header h2{
-      font-size: 3rem;
-      margin: 5rem 0 0 0;
+      font-size: 2.8rem;
+      margin: 6rem 0 0 0;
     }
     .texto-header p{
        text-align: center;
-       font-size: 1.3rem;
+       font-size: 1.2rem;
     }
 }
 
