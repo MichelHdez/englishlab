@@ -442,7 +442,7 @@ html {
 @media (max-width: 330px){
   .texto-header h2{
       font-size: 2.8rem;
-      margin: 6rem 0 0 0;
+      margin: 5rem 0 0 0;
     }
     .texto-header p{
        text-align: center;
